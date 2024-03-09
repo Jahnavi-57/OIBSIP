@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Temperature convertor</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br>
+    <div id="main">
+        <h1>Temperature converter</h1>
+    </div>
+    <div id="div1" >
+        <br>
+        <label for="conversion_types">Select Temperature scale</label>
+        <select id="conversion_types" name="c_type">
+            <option value="fahrenheit">Fahrenheit</option>
+            <option value="celsius">Celsius</option>
+            <option value="kelvin">Kelvin</option>
+        </select><br>
+        <label for="inputField">Enter temperature in degrees:</label>
+        <input type="text" id="inputField">
+        <button onclick="convertTemperature()">Convert</button>
+        <div id="resultDisplay"> </div>
+    </div>
+</body>
+</html>
