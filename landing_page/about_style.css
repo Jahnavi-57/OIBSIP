@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+body{
+    background-color:#d2aa75;
+}
+.heading
+{
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    text-align:center;
+    margin:20px auto;
+}
+.heading h1{
+    font-size:50px;
+    color:#000;
+    margin-bottom:25px;
+    position:relative;
+}
+.heading h1::after
+{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:4px;
+    display:block;
+    margin:0 auto;
+    background-color:#714f22;
+}
+.heading p{
+    font-size:18px;
+    color:#666;
+    margin-bottom: 35px;
+}
+.container
+{
+    width:90%;
+    margin:0 auto;
+    padding:10px 20px;
+}
+.about
+{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+
+}
+.about-image
+{
+    border-radius:40px;
+    flex:1;
+    margin-right:40px;
+    overflow:hidden;
+}
+.about-image img{
+  
+    max-width:100%;
+    height:auto;
+    display:block;
+    transition: 0.5s ease;
+}
+.about-image:hover img{
+    transform:scale(1.2);
+}
+.about-content
+{
+    flex:1;
+}
+.about-content h2{
+    padding-top:30px;
+    font-size:23px;
+    margin-bottom:15px;
+    color:#3b2c07;
+}
+.about-content p{
+    font-size:18px;
+    line-height:1.5;
+    color:#3b2c07;
+}
+.about-content .read-more{
+    display:inline-block;
+    padding:10px 20px;
+    background-color:#3b2c07;
+    color:#fff;
+    font-size:19px;
+    text-decoration:none;
+    border-radius:25px;
+    margin-top:15px;
+    transition:0.3 ease;
+}
+.about-content .read-more:hover
+{
+    background-color:#714f22;
+    transform:scale(0.9);
+}
+
+@media screen and (max-width:768px)
+{
+    .heading{
+        padding:0px 20px;
+    }
+    .heading h1{
+        font-size:36px;
+    }
+    .heading p{
+        font-size:17px;
+        margin-bottom:0px;
+    }
+    .container{
+        padding:0px;
+    }
+    .about{
+        padding:20px;
+        flex-direction:column;
+    }
+    .about-image{
+        margin-right:0px;
+        margin-bottom:20px;
+    }
+    .about-content p{
+        padding:0px;
+        font-size:16px;
+    }
+    .about-content .read-more{
+        font-size:16px;
+    }
+}

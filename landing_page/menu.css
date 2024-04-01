@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+body{
+    margin:25px;
+    background-color:rgb(201, 161, 76)
+}
+.menu{
+    text-align:center;
+}
+.head{
+    background-color:rgb(103, 78, 25);
+    width:100%;
+    padding:5px;
+    color:aliceblue;
+    text-align:center;
+    margin:0 auto;
+    border-radius:50px;
+}
+div.polaroid{
+    width:200px;
+    box-shadow:0px 4px 8px 0px;
+    margin:25px;
+    border-radius:30px;
+    display:inline-block;
+}
+div.container{
+    text-align:center;
+    padding:10px;
+    font-family:"Poppins",sans-serif;
+}
+div.polaroid:hover{
+    transform:scale(1.1);
+}
+.image
+{
+    width:200px;
+    height:200px;
+    border-radius:30px;
+    object-fit:cover;
+}
+#one{
+    background-color:plum;
+}
+#two{
+    background-color:rgb(109, 216, 95);
+}
+#three
+{
+    background-color:palevioletred;
+}
+#four{
+    background-color:aqua;
+}
+#five
+{
+    background-color:rgb(179, 76, 179);
+}
+#six
+{
+    background-color:rgb(131, 98, 210);
+}
+#seven
+{
+    background-color:aquamarine;
+}
+#eight
+{
+    background-color:rgb(209, 68, 68)
+}
+@media screen and (max-width: 700px) { /* Apply styles when screen width is 700px or less */
+    #main {
+        font-size: 16px; /* Decrease font size */
+        border-radius: 20px; /* Adjust border-radius */
+    }
+}
+
+@media screen and (max-width: 500px) { /* Apply styles when screen width is 500px or less */
+    #main {
+        font-size: 14px; /* Decrease font size further */
+    }
+}

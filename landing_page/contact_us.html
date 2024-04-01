@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!--alert messages start-->
+    <div id="success-message" class ="alert-success">
+        <span>Message Sent! Thank You for contacting us.</span>
+    </div>
+    <div id="error-message" class="alert-error">
+        <span>Something went wrong! Please try again.</span>
+    </div>
+    <!--alert messsage end-->
+    
+    <div class="contact-section">
+        <div class="contact-info">
+            <div><i class="fa-solid fa-location-dot"></i> Chennai,Tamil Nadu</div>
+            <div><i class="fas fa-envelope"></i> Jcafe@gmail.com</div>
+            <div><i class="fas fa-phone"></i> 123-456-789</div>
+            <div><i class="fas fa-clock"></i>Mon-Sat @5:00 P.M -8:00 P.M, Sun @10:00 A.M</div>
+        </div>
+        <div class="contact-form">
+            <h2>Contact us</h2>
+            <form class="contact" id="contact-form">
+                <input type="text" name="name" id="name" class="text-box" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" class="text-box" placeholder="Your Email" required>
+                <textarea name="message" rows="5" id="message" placeholder="Your Message" required></textarea>
+                <input type="submit" name="submit"  id="submit-btn "class="send-btn" value="Send">
+            </form>
+        </div>
+        <script src="contact_script.js"></script>
+    </div>
+</body>
+</html>
