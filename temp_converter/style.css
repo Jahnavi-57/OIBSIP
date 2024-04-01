@@ -1,0 +1,118 @@
+#div1{
+    width:80%;
+    max-width: 350px;
+    height:330px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(202, 219, 215, 0.92);
+    border-radius:10px;
+    border:10px solid indigo;
+}
+#main
+{
+    width:100%;
+    padding:5px;
+    background-color:violet;
+    color:black;
+    text-align:center;
+    margin:0 auto;
+    border-radius:50px;
+}
+body {
+    font-style:italic;
+    margin-top:20px;
+    background-color:lightgreen;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color:#fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color:indigo;
+    margin-left:55px;
+    margin-bottom:10px;
+}
+
+input[type="text"] {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-left:60px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color:white;
+    color:blue;
+}
+
+select {
+    width: 60%;
+    padding: 8px;
+    margin-bottom: 20px;
+    margin-left:60px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color:white;
+    color:blue;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:violet;
+    color:indigo;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left:35%
+}
+
+button:hover {
+    background-color:aqua;
+}
+#resultDisplay{
+    width: 70%;
+    height:50px;
+    text-align:center;
+    padding: 8px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left:50px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+    background-color:white;
+    color:blue;
+}
+@media screen and (max-width: 700px) { /* Apply styles when screen width is 700px or less */
+    #main {
+        font-size: 16px; /* Decrease font size */
+        border-radius: 20px; /* Adjust border-radius */
+    }
+
+    #div1 {
+        width: 90%; /* Change width to 90% */
+    }
+}
+
+@media screen and (max-width: 500px) { /* Apply styles when screen width is 500px or less */
+    #main {
+        font-size: 14px; /* Decrease font size further */
+    }
+
+    #div1 {
+        width: 95%; /* Change width to 95% */
+    }
+}
